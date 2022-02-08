@@ -5,12 +5,15 @@
         </div>
         <div class="container my-4">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <div class="dm-logo">
                         <img src="../assets/img/logos/logo-default-slim.png" alt="">
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="dm-bottom-nav d-flex align-items-center">
+            <bottom-nav />
         </div>
         
         
@@ -18,12 +21,14 @@
 </template>
 
 <script>
-import TopNav from "./commons/TopNav.vue"
+import TopNav from "./commons/TopNav.vue";
+import BottomNav from "./commons/BottomNav.vue";
 
 export default {
     name: 'Header',
     components: {
-        TopNav
+        TopNav,
+        BottomNav
     }
 }
 </script>
@@ -37,8 +42,12 @@ export default {
 
 .dm-logo{
     img{
-        height: 60px;
-        
+        height: 60px;        
     }
+}
+
+.dm-bottom-nav{
+    padding: 10px;
+    border-top: 1px solid #ededed;
 }
 </style>
