@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="dm-logo">
-                        <img src="../assets/img/logos/logo-default-slim.png" alt="">
+                        <img src="../../assets/img/logos/logo-default-slim.png" alt="">
                     </div>
                 </div>
             </div>
@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import TopNav from "./commons/TopNav.vue";
-import BottomNav from "./commons/BottomNav.vue";
+import TopNav from "../commons/TopNav.vue";
+import BottomNav from "../commons/BottomNav.vue";
 
 export default {
     name: 'Header',
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/style/global.scss';
+@import '../../assets/style/global.scss';
 
 .bg-top-header{
     background-color: #0088cc;

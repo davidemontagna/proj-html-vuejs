@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import SearchBar from "./SearchBar.vue"
+import SearchBar from "../micro/SearchBar.vue"
 
 export default {
     name: 'BottomNav',

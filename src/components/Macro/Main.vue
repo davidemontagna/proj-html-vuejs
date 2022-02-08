@@ -9,23 +9,32 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <all-posts />
+                </div>
+            </div>
+        </div>
         
     </main>
 </template>
 
 <script>
-import LabelsGrid from "./commons/LabelsGrid.vue"
+import LabelsGrid from "../commons/LabelsGrid.vue"
+import AllPosts from "../commons/AllPosts.vue"
 
 export default {
     name: 'Main',
     components:{
         LabelsGrid,
+        AllPosts
     },
 }
 </script>
 
 <style lang="scss">
-@import '../assets/style/global.scss';
+@import '../../assets/style/global.scss';
 
 .dm-top-grid{
     background-color: $bg-color-2;
