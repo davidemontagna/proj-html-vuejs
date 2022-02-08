@@ -1,8 +1,7 @@
 <template>
     <div class="d-flex justify-content-between flex-wrap">
         <div class="g-3 my-3 dm-lbl-container" v-for="(element, index) in labels" :key="index">
-            <div class="dm-gradient">              
-            </div>
+            <div class="dm-gradient"></div>
             <img :src="require(`../../assets/img/labels-img/${element.img}.jpg`)" alt="">
             
             <div class="dm-txt-labels">
