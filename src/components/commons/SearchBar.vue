@@ -18,14 +18,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../assets/style/global.scss';
+
 .search-box {  
-  background: #fff;
+  background: $bg-color-1;
   height: 40px;
   border-radius: 50px;
   padding: 10px;  
 }
 .search-box:hover{
-    border: 1px solid black;
+    border: 1px solid $border-color-10;
 }
 /* input */
 .search-input {
@@ -34,18 +36,18 @@ export default {
   background: none;
   width: 0;
   padding: 0;
-  color: #000;
+  color: $font-color-10;
   float: left;
   font-size: 16px;
   transition: .3s;
   line-height: 40px;
 }
 .search-input::placeholder {
-  color: #000;
+  color: $font-color-10;
 }
 /* icon */
 .search-btn {
-  color: #000;
+  color: $font-color-10;
   float: right;  
   border-radius: 50px;  
   display: flex;
@@ -66,8 +68,8 @@ export default {
 .search-box:hover > .search-btn,
 .search-input:focus + .search-btn,
 .search-input:not(:placeholder-shown) + .search-btn {
-  background: #fff;
-  color: #000;
+  background: $bg-color-1;
+  color: $font-color-10;
 }
 
 </style>

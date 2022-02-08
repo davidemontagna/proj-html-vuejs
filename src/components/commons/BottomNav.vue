@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../assets/style/global.scss';
 
 .dm-nav-bottom{
 
@@ -56,11 +57,11 @@ export default {
         font-weight: bold;
         margin-right: 40px;
         text-transform: uppercase;
-        color: #212529;
+        color: $font-color-9;
         text-decoration: none;
 
         &:hover{
-            color: #0088cc;
+            color: $font-color-4;
         }        
     }
 }

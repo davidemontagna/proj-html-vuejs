@@ -29,9 +29,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../assets/style/global.scss';
+
 .container{
     span{
-        color: #b7b7b7;
+        color: $font-color-2;
     }
 }
 
@@ -40,11 +42,11 @@ export default {
     margin-left: 20px;
     .dm-nav-links{
         text-transform: uppercase;
-        color: #fff;
+        color: $font-color-1;
         text-decoration: none;
 
         &:hover{
-            color: #b7b7b7;
+            color: $font-color-2;
         }        
     }
     

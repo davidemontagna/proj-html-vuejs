@@ -25,9 +25,4 @@ export default {
 <style lang="scss">
 @import './assets/style/global.scss';
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 </style>

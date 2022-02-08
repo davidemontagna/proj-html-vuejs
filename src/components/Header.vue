@@ -34,6 +34,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/style/global.scss';
+
 .bg-top-header{
     background-color: #0088cc;
     height: 50px;    
