@@ -37,7 +37,7 @@ export default {
 @import '../../assets/style/global.scss';
 
 .bg-top-header{
-    background-color: #0088cc;
+    background-color: $bg-color-6;
     height: 50px;    
     width: 100vw;
 }
@@ -50,6 +50,6 @@ export default {
 
 .dm-bottom-nav{
     padding: 10px;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid $border-color-3;
 }
 </style>

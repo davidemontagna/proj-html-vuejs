@@ -16,19 +16,30 @@
                 </div>
             </div>
         </div>
+        <div class="my-5 dm-buttons-row d-flex align-items-center">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col-12 col-sm-6 w-100">
+                        <buttons />
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </main>
 </template>
 
 <script>
-import LabelsGrid from "../commons/LabelsGrid.vue"
-import AllPosts from "../commons/AllPosts.vue"
+import LabelsGrid from "../commons/LabelsGrid.vue";
+import AllPosts from "../commons/AllPosts.vue";
+import Buttons from "../commons/Buttons.vue";
 
 export default {
     name: 'Main',
     components:{
         LabelsGrid,
-        AllPosts
+        AllPosts,
+        Buttons
     },
 }
 </script>
@@ -39,5 +50,10 @@ export default {
 .dm-top-grid{
     background-color: $bg-color-2;
     padding: 30px;
+}
+
+.dm-buttons-row{
+    height: 140px;
+    background-color: $bg-color-5;
 }
 </style>
