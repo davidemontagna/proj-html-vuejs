@@ -27,8 +27,15 @@
         </div>
         <div class="container">
             <div class="row w-100">
-                <div class="col-12 col-sm-6 col-lg-3 w-100">
-                    <posts-big />
+                <div class="col-12 col-sm-6 col-lg-3 w-100 clearfix">
+                    <div class="float-start dm-posts-section">
+                        <posts-big />
+                    </div>
+                    <div class="float-end dm-socials-section">
+                        <socials />
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -41,6 +48,7 @@ import LabelsGrid from "../commons/LabelsGrid.vue";
 import AllPosts from "../commons/AllPosts.vue";
 import Buttons from "../commons/Buttons.vue";
 import PostsBig from "../commons/PostsBig.vue";
+import Socials from "../commons/Socials.vue";
 
 export default {
     name: 'Main',
@@ -48,7 +56,8 @@ export default {
         LabelsGrid,
         AllPosts,
         Buttons,
-        PostsBig
+        PostsBig,
+        Socials
     },
 }
 </script>
@@ -64,5 +73,13 @@ export default {
 .dm-buttons-row{
     height: 140px;
     background-color: $bg-color-5;
+}
+
+.dm-posts-section{
+    width: 65%;
+}
+
+.dm-socials-section{
+    widows: 30%;
 }
 </style>

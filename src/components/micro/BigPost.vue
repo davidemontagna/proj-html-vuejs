@@ -16,18 +16,18 @@
             <div class="dm-post-desc ms-3">
                 <h3>{{post.title}}</h3>
                 <p>{{post.text}}</p>
-                <div class="dm-post-labels d-flex justify-content-between">
+                <div class="dm-post-labels d-flex justify-content-start">
                     <span>
                         <i class="fa-regular fa-user"></i>
                         By <a href="#">{{post.author}}</a>
                     </span>
-                    <span>
+                    <span class="mx-3">
                         <i class="fa-regular fa-folder"></i>
-                        <a v-for="(lbl, i) in post.label" :key="i" href="#">{{lbl}} </a>
+                        <a v-for="(lbl, i) in post.label" :key="i" href="#"> {{lbl}} </a>
                     </span>
-                    <span>
+                    <span >
                         <i class="fa-regular fa-comments"></i>
-                        <a href="#">{{post.comments}} Comments</a>
+                        <a href="#"> {{post.comments}} Comments</a>
                     </span>
                 </div>
             </div>
@@ -53,7 +53,7 @@ export default {
 @import '../../assets/style/global.scss';
 
 .dm-single-post{
-    width: 65%;
+    width: 100%;
     
 
     img{
@@ -81,7 +81,16 @@ export default {
 }
 
 .dm-post-labels{
-    width: 50%;
+    width: 100%;
+    font-size: 13px;
+
+    span {
+        color: $font-color-5;
+
+        a{
+        text-decoration: none;
+        }
+    }
 }
 
 .dm-single-post:last-child{
