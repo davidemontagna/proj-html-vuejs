@@ -33,12 +33,12 @@
                     </div>
                     <div class="float-end dm-socials-section">
                         <socials />
-                    </div>
-                    
+                    </div>                   
                     
                 </div>
             </div>
         </div>
+        
         
     </main>
 </template>
@@ -80,6 +80,6 @@ export default {
 }
 
 .dm-socials-section{
-    widows: 30%;
+    width: 30%;
 }
 </style>

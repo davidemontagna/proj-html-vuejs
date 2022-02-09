@@ -1,20 +1,28 @@
 <template>
     <div class="dm-big-posts">
-        <big-post
-        v-for="(post, index) in bigPost"
-        :key="index"
-        :post="post"
-        />
+        <div>
+            <big-post
+            v-for="(post, index) in bigPost"
+            :key="index"
+            :post="post"
+            />
+        </div>
+        <div>
+            <num-slider />
+        </div>
+        
     </div>
 </template>
 
 <script>
-import BigPost from "../micro/BigPost.vue"
+import BigPost from "../micro/BigPost.vue";
+import NumSlider from "../micro/NumSlider.vue"
 
 export default {
     name: 'PostsBig',
     components: {
         BigPost,
+        NumSlider
     },
     data(){
         return{
