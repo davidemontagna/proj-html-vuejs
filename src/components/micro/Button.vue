@@ -1,8 +1,6 @@
 <template>
 
-    <div class="dm-border-btn d-flex justify-content-center">
-        <a class="dm-single-btn text-uppercase" href="#">{{button}}</a>
-    </div>       
+    <a class="dm-single-btn text-uppercase" href="#">{{button}}</a>          
     
 </template>
 
@@ -18,21 +16,18 @@ export default {
 <style lang="scss">
 @import '../../assets/style/global.scss';
 
-.dm-border-btn{
-    width: 160px;
-    background-color: $bg-color-8;
-    padding: 10px;
-
-    &:hover{
-        border: 4px solid $bg-color-6;
-    }
-}
 
 .dm-single-btn{   
     text-decoration: none;
     color: $font-color-1;
+    width: 160px;
+    background-color: $bg-color-8;
+    padding: 10px;
+    text-align: center;
+    
     
     &:hover{
+        border: 4px solid $bg-color-6;
         color: $font-color-1;
     }     
 }

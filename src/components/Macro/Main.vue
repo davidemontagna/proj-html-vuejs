@@ -25,6 +25,13 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-12 col-sm-6 col-lg-3 w-100">
+                    <posts-big />
+                </div>
+            </div>
+        </div>
         
     </main>
 </template>
@@ -33,13 +40,15 @@
 import LabelsGrid from "../commons/LabelsGrid.vue";
 import AllPosts from "../commons/AllPosts.vue";
 import Buttons from "../commons/Buttons.vue";
+import PostsBig from "../commons/PostsBig.vue";
 
 export default {
     name: 'Main',
     components:{
         LabelsGrid,
         AllPosts,
-        Buttons
+        Buttons,
+        PostsBig
     },
 }
 </script>
