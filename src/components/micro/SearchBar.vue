@@ -24,11 +24,14 @@ export default {
   background: $bg-color-1;
   height: 40px;
   border-radius: 50px;
-  padding: 10px;  
+  padding: 10px; 
+  border: 1px solid $border-color-10; 
 }
 .search-box:hover{
     border: 1px solid $border-color-10;
 }
+
+
 /* input */
 .search-input {
   outline: none;
