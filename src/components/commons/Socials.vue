@@ -126,6 +126,9 @@ export default {
         border-radius: 15px;
         text-decoration: none;
 
+        &:hover{
+            color: $font-color-4;
+        }
 
     }
 }

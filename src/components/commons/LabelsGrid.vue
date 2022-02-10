@@ -4,7 +4,7 @@
             <div class="dm-gradient"></div>
             <img :src="require(`../../assets/img/labels-img/${element.img}.jpg`)" alt="">
             
-            <div class="dm-txt-labels">
+            <div class="dm-txt-labels p-2">
                 <span class="dm-label">{{element.label}}</span>
                 <span class="d-block my-2 dm-title">{{element.title}}</span>
                 <p class="dm-text">{{element.text}}</p>
@@ -97,7 +97,7 @@ export default {
 
         .dm-title{
             color: $font-color-1;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bolder;
         }
 

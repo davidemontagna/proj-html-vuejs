@@ -1,20 +1,22 @@
 <template>
-    <div class="dm-slide my-5 d-flex justify-content-end align-items-center">
-        <div>
-            <i class="fa-solid fa-chevron-left" @click="goUp()"></i>
-        </div>
-        
-        <div>
-            <a 
-            class="dm-slide-num mx-2"
-            href="#"
-            v-for="(num, index) in pages"
-            :key="'pages'+index"
-            >{{num.number}}</a>
-        </div>
-        <div>
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
+    <div class="my-5 d-flex justify-content-end align-items-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link dm-slide" href="#" aria-label="Previous">
+                        <span class="dm-wt" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+                    </a>
+                </li>
+                <li v-for="(num, index) in pages" :key="'pages'+index" class="page-item">
+                    <a class="page-link dm-slide" href="#">{{num.number}}</a>
+                </li>                
+                <li class="page-item">
+                    <a class="page-link dm-slide" href="#" aria-label="Next">
+                        <span class="dm-wt" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         
     </div>
 </template>
@@ -38,14 +40,10 @@ export default {
                     activePage: false
                 },
             ],
-            position: -1,
-        }
-    },
-    methods:{
-        goUp(){
             
         }
-    }
+    },
+    
 }
 </script>
 
@@ -53,27 +51,10 @@ export default {
 @import '../../assets/style/global.scss';
 
 .dm-slide{
-    color: $font-color-4;
-}
-
-.dm-active{
-    background-color: #0088cc;
-    color: #fff;
-
     &:hover{
-        color: #fff;
+        background-color: $bg-color-5!important;
+        color: $font-color-1!important;
     }
 }
 
-.dm-slide-num{
-    padding: 5px 8px;
-    text-decoration: none;
-    color: $font-color-4;
-    text-align: center;
-
-    &:hover{
-        text-decoration: underline;
-        color: $font-color-4;
-    }
-}
 </style>
