@@ -13,9 +13,9 @@
                 <div class="dm-day">{{post.dayDate}}</div>
                 <div class="dm-month text-uppercase">{{post.month}}</div>
             </div>
-            <div class="dm-post-desc ms-3">
+            <div class="dm-post-desc ms-3 dm-wrapper">
                 <h3>{{post.title}}</h3>
-                <p>{{post.text}}</p>
+                <p class="dm-demo-1">{{post.text}}</p>
                 <div class="dm-post-labels d-flex justify-content-start">
                     <span>
                         <i class="fa-regular fa-user"></i>
@@ -53,17 +53,36 @@ export default {
 @import '../../assets/style/global.scss';
 
 .dm-single-post{
-    width: 100%;
-    
+    width: 100%;   
 
     img{
         height: 344px;
+    }
+
+    &:hover .dm-demo-1{
+        display: block;
+
     }
 }
 
 .dm-post-desc{
     border-bottom: 1px solid $border-color-3;
-    padding-bottom: 24px;
+    padding-bottom: 24px;    
+}
+
+.dm-wrapper{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+
+    .dm-demo-1 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
 }
 
 .dm-day{
